@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family:"Poppins",sans-serif;   
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding:1% 3%;
+    z-index: 10;
+}
+.navbar_netflix{
+    width: 125px;
+    height: 100%; 
+}
+.navbar__nav__items{
+    display: flex;
+    gap: 10px;
+}
+.netflix_logo{
+     width: 100%;
+     height: 100%;
+     background: transparent;
+}
+.language_drop_down{
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.nav__item{
+    margin-top: 16px;
+}
+.dropdown__container{
+    border: 1px solid white;
+    padding: 0.5rem;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.4);
+}
+
+.signin__button{
+    border: #dc030f;
+    background-color: #dc030f;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    height: 35px;
+    width: 100px;
+ }
+
+ .hero__bg__image__container{
+    width: 100%;
+    height: 100%;
+
+ }
+.hero__bg__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: -90px;
+}
+
+.hero__bg__overlay{
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+}   
+
+.hero__card{
+    position: absolute;
+    top: 30%;
+    left: 27%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.hero__title{
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.hero__subtitle,
+.hero__description{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.email{
+    width: 450px;
+    height: 60px;
+    color: black;
+    padding: .25rem;
+    border-radius: 3px;
+    border-color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+.get_started{
+    font-size: large;
+    width: 170px;
+    height: 60px;
+    background-color: #dc030f;
+    border:#dc030f;
+}
+
+.card-1,
+.card-2,
+.card-3{
+    border-top: 8px rgb(69, 69, 69);
+    padding: 50px;
+}
+.card-1{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+
+}
+.desc-1{
+    padding-left: 80px;
+}
+.card-1 video{
+      position:relative;
+      width: 100%;
+      height: 54%;
+      grid-column: 2/2;
+      grid-row: 1/2;
+      z-index: -1;
+}
+.card-1 img{
+    grid-column: 2/2;
+    grid-row: 1/2;
+    border: 0;
+}
+.style_card h1{
+    font-size: 3rem;
+    padding: 1rem;
+    padding-left: 0;
+}
+.style_card h3{
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+.card-2{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 40% 50%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+.desc-2{
+    padding-left: 0%;
+}
+.card-3{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+
+}
+.desc-3{
+    padding-left: 80px;
+    padding-right: 20px;
+}
+
+.card-3 img{
+    width: 110%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+.card-3 video{
+    position: relative;
+    top:-20%;
+    left:126px;
+    width: 65%;
+    height: 78%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index:-1;
+}
+.legend{
+    width: 100%;
+    height: 0.5rem;
+    position: initial;
+    bottom: -0.5rem;
+    background-color: rgb(35,35,35);
+}
+.footer,
+.footer a{
+    color: #FFFFFFB3;
+    font-size: 1rem;
+    font-style:"Poppins",sans-serif;
+
+}
+.footer p{
+    margin-bottom: 1.5rem;
+    padding-left: 130px;
+    padding-top: 20px;
+}
+.footer-cols{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2rem; 
+    padding-left: 130px;
+
+}
+.footer li{
+    line-height: 1.9;
+    text-decoration:underline;
+    list-style-type: none;
+}
+.footer_dropdown{
+    border: 2px solid white;
+    width: 7%;
+    height:40%;
+    margin-top: 10px;
+    margin-left: 130px;
+    margin-bottom: 7px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 4px;   
+}
+.footer-globe{
+    margin-left: 5px;
+    margin-top:6px ;
+    margin-bottom:6px;
+}
+.text2{
+    font-size: 1.4rem;
+}
+.text1{
+    color: #999;
+    margin-bottom: 20px;
+    
+}
+.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+    border-radius: 0;
+    background-color: #161616;
+    color: white;
+    margin-left: 0px;
+}
+.accordion-body{
+    background-color: #161616;
+    color: white;
+}
+.accordion-header{
+    align-items: center;
+}
+#legend1{
+    margin-top: 70px;
+}
